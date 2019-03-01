@@ -18,6 +18,7 @@
              
 #navigation li a {
     color:white;
+    font-family: 'Coiny', cursive;
     font-size: 2rem;
     margin-right: 3rem;  
     margin-bottom:auto;
@@ -47,10 +48,11 @@
              opacity: 1;
            }
            body {
-            font-family: "Computer Modern Sans", sans-serif;
+            font-family: 'Coiny', cursive;
 }
      .centered {
       position: absolute;
+      font-family: 'Coiny', cursive;
       top:100px;
       left:500px;
       color:rgba(235, 235, 23, 0.774);
@@ -58,6 +60,7 @@
 }
 .top-left{
 position:absolute;
+font-family: 'Coiny', cursive;
 top:230px;
 left:150px;
 color:rgba(235, 235, 23, 0.774);
@@ -68,6 +71,7 @@ input[type='radio']{
           }
           .agile-top p{
     font-size: 2em;
+     font-family: 'Coiny', cursive;
     color: black;
     text-align: center;
     top:90%;
@@ -77,6 +81,7 @@ input[type='radio']{
   .agile {
   background-color:rgba(235, 235, 23, 0.774);
   color: black;
+  font-family: 'Coiny', cursive;
   padding: 8px 15px;
   border: none;
   cursor: pointer;
@@ -99,6 +104,7 @@ input[type='radio']{
 .radio1{
             background-color:transparent;
             font-size:1rem;
+            font-family: 'Coiny', cursive;
             color:gold;
             margin-left:40%;
             top:80%;
@@ -118,13 +124,44 @@ input[type='radio']{
 <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
 <script>
   $(document).ready(function(){
-      $("#creditCardForm").hide();
+
       $("#creditcard").click(function(){
-             $("#creditCardForm").slideDown(2000); 
+        $("#creditCardForm").slideUp(1000);
+        $("#creditCardForm").hide();
       })
     });
 
 </script>
+<script>
+    $(document).ready(function(){
+      $("#creditCardForm").hide();
+        $("#creditcard2").click(function(){
+        
+               $("#creditCardForm").slideDown(2000); 
+               $("#creditCardForm").show();
+        })
+      });
+      </script>
+      <script>
+          $(document).ready(function(){
+        
+              $("#measurements1").click(function(){
+                $("#creditCardForm1").slideUp(2000);
+                $("#creditCardForm1").hide();
+              })
+            });
+        
+        </script>
+      <script>
+                  $(document).ready(function(){
+                
+                    $("#measurements2").click(function(){
+                        $("#creditCardForm1").slideUp(5000);
+                        $("#creditCardForm1").hide();
+                      })
+                    });
+                
+                </script>
 <script>
   $(document).ready(function(){
       $("#creditCardForm1").hide();
@@ -161,8 +198,9 @@ input[type='radio']{
  </h3> </p>
   <form>
 <div class="radio">
-   <label><input type="radio" name="optradio" checked><h4>I Have Fabric </h4></label>
-    <br> <div id="creditcard">
+    <div id="creditcard">
+        <label><input type="radio" name="optradio" checked><h4>I Have Fabric </h4></label></div>
+    <br> <div id="creditcard2">
     <label><input type="radio" name="optradio" ><h4>I Dont have Fabric</h4></label>
   </div>
 </div><p>
@@ -206,11 +244,13 @@ padding: 12px 20px;
                 <p><h3> Measurements</h3></p>  
                 <form>
                    <div class="radio">
+                       <div id="measurements1">
                      <label><input type="radio" name="optradio" checked ><h4> Use my  fit garment</h4></label>
-                   </div>
+                       </div></div>
                    <div class="radio">
+                        <div id="measurements2">
                      <label><input type="radio" name="optradio" ><h4> send the technician to my location</h4></label>
-                   </div>
+                       </div></div>
                    
                    <div class="radio">
                       <div id="creditcard1">
