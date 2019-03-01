@@ -44,7 +44,7 @@
              }
              body,html{
              opacity: 1;
-            font-family: "Computer Modern Sans", sans-serif;
+            font-family:coiny,cursive;
           background-color: black;
   background-repeat: no-repeat;
  background-size: 100%;
@@ -111,16 +111,46 @@ input[type='radio']{
 <link rel="shortcut icon" type="images/jpeg" href="images/logo1.jpeg">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src="js/app.js"></script>
-
 <script>
   $(document).ready(function(){
-      $("#creditCardForm").hide();
+
       $("#creditcard").click(function(){
-             $("#creditCardForm").slideDown(2000); 
+        $("#creditCardForm").slideUp(1000);
+        $("#creditCardForm").hide();
       })
     });
 
 </script>
+<script>
+    $(document).ready(function(){
+      $("#creditCardForm").hide();
+        $("#creditcard2").click(function(){
+        
+               $("#creditCardForm").slideDown(2000); 
+               $("#creditCardForm").show();
+        })
+      });
+      </script>
+      <script>
+          $(document).ready(function(){
+        
+              $("#measurements1").click(function(){
+                $("#creditCardForm1").slideUp(2000);
+                $("#creditCardForm1").hide();
+              })
+            });
+        
+        </script>
+      <script>
+                  $(document).ready(function(){
+                
+                    $("#measurements2").click(function(){
+                        $("#creditCardForm1").slideUp(5000);
+                        $("#creditCardForm1").hide();
+                      })
+                    });
+                
+                </script>
 <script>
   $(document).ready(function(){
       $("#creditCardForm1").hide();
@@ -130,6 +160,7 @@ input[type='radio']{
     });
 
 </script>
+
 
 </head>
 <body  ng-app="myApp" ng-controller="orderController">
@@ -157,8 +188,9 @@ input[type='radio']{
  </h3> </p>
   <form>
 <div class="radio">
-   <label><input type="radio" name="optradio" checked><h4>I Have Fabric </h4></label>
-    <br> <div id="creditcard">
+    <div id="creditcard">
+        <label><input type="radio" name="optradio" checked><h4>I Have Fabric </h4></label></div>
+    <br> <div id="creditcard2">
     <label><input type="radio" name="optradio" ><h4>I Dont have Fabric</h4></label>
   </div>
 </div><p>
@@ -218,11 +250,13 @@ padding: 12px 20px;
                 <p><h3> Measurements</h3></p>  
                 <form>
                    <div class="radio">
+                        <div id="measurements1">
                      <label><input type="radio" name="optradio" checked ><h4> Use my  fit garment</h4></label>
-                   </div>
+                       </div></div>
                    <div class="radio">
+                       <div id="measurements2">
                      <label><input type="radio" name="optradio" ><h4> send the technician to my location</h4></label>
-                   </div>
+                       </div></div>
                    
                    <div class="radio">
                       <div id="creditcard1">
@@ -235,26 +269,26 @@ padding: 12px 20px;
                   <div class="row">
                       <div class="col-md-3">
                  <label for="shirt_len">Shirt Length</label>
-                 <input type="text" class="form-control" style="width:100px;" id="shirt_lens" ng-model="shirtLength" required>
+                 <input type="text" class="form-control" style="width:100px;" id="shirt_lens" ng-model="shirtLength" required><br>
                  <label for="shoulder_len">Shoulder Length</label>
                  <input type="text" class="form-control" style="width:100px;" id="shoulder_lens" ng-model="shoulderLength" required></div>
                  
                     <div class="col-md-3">
                  <label for="suit_len">Suit Length</label>
-                 <input type="text" class="form-control" style="width:100px;" id="suit_lens" required>
+                 <input type="text" class="form-control" style="width:100px;" id="suit_lens" required><br>
                  <label for="sleeve_len">Sleeve Length</label>
                  <input type="text" class="form-control" style="width:100px;" id="shoulder_lens" ng-model="sleaveLength" required>
                 </div>
                 
                  <div class="col-md-3">
                  <label for="sleeve_round">Sleeve round</label>
-                 <input type="text" class="form-control" style="width:100px;" id="shoulder_lens" required>
+                 <input type="text" class="form-control" style="width:100px;" id="shoulder_lens" required><br>
                  <label for="chest_round">Chest round</label>
                  <input type="text" class="form-control" style="width:100px;" id="shoulder_lens" required></div>
                
                     <div class="col-md-3">
                  <label for="waist">Waist</label>
-                 <input type="text" class="form-control" style="width:100px;" id="shoulder_lens" required>
+                 <input type="text" class="form-control" style="width:100px;" id="shoulder_lens" required><br>
                  <label for="neck_round">Neck round</label>
                  <input type="text" class="form-control" style="width:100px;" id="shoulder_lens" required>
                </div>
@@ -267,24 +301,24 @@ padding: 12px 20px;
           <div class="row">
               <div class="col-md-3">
         <label for="pant_len">Pant Length</label>
-        <input type="text" class="form-control" style="width:100px;" id="pant_lens" required>
+        <input type="text" class="form-control" style="width:100px;" id="pant_lens" required><br>
         
         <label for="knee_len">Knee Length</label>
         <input type="text" class="form-control" style="width:100px;" id="knee_lens" required></div>
         <div class="col-md-3">
         <label for="waist">Waist</label>
-        <input type="text" class="form-control" style="width:100px;" id="waist" required>
+        <input type="text" class="form-control" style="width:100px;" id="waist" required><br>
         <label for="hip">Hip</label>
         <input type="text" class="form-control" style="width:100px;" id="hip" required></div>
    
             <div class="col-md-3">
         <label for="hip">Fork Length</label>
-        <input type="text" class="form-control" style="width:100px;" id="fork_len" required>
+        <input type="text" class="form-control" style="width:100px;" id="fork_len" required><br>
         <label for="thi">Thi</label>
         <input type="text" class="form-control" style="width:100px;" id="hip" required></div>
         <div class="col-md-3">
         <label for="knee_round">Knee round</label>
-        <input type="text" class="form-control" style="width:100px;" id="knee_round" required>
+        <input type="text" class="form-control" style="width:100px;" id="knee_round" required><br>
         <label for="bottom_len">Bottom Length</label>
         <input type="text" class="form-control" style="width:100px;" id="knee_round" required>
       </div>
@@ -296,11 +330,11 @@ padding: 12px 20px;
     <input type="date" style="Color:black;" ng-model="date">
    <br> <label for="name"><h3>Enter Name</h3></label>
     <input type="text" class="form-control" style="width:200px;" id="name" ng-model="name" required>
-    <br> <label for="phone"><h3>Enter Phone</h3></label>
+    <label for="phone"><h3>Enter Phone</h3></label>
     <input type="text" class="form-control" style="width:200px;" id="phone" ng-model="phone" required>
-    <br> <label for="address"><h3>Enter Address</h3></label>
+     <label for="address"><h3>Enter Address</h3></label>
     <input type="text" class="form-control" style="width:200px;" id="knee_round"  ng-model="address" required>
-    <br> <label for="email"><h3>Enter Email</h3></label>
+    <label for="email"><h3>Enter Email</h3></label>
     <input type="text" class="form-control" style="width:200px;" id="knee_round" ng-model="email" required>
     <p><h3>Any Specifications regarding design pattern can be provided </h3></p>
    <input type="text" style="Color:black;
