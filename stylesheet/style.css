@@ -1,9 +1,11 @@
 html, body {
   max-width: 100%;
+  font-family: 'Coiny', cursive;
   overflow-x: hidden;
 }
 #navigation li a {
     color:white;
+    font-family: 'Coiny', cursive;
     font-size: 2rem;
     margin-right: 3rem;  
     margin-bottom:auto;
@@ -11,16 +13,20 @@ html, body {
   }
 #navigation{
   background: black;
+  font-family: 'Coiny', cursive;
+  
 }
 .text{
   font-size: 200%;
-  font-family: garamond;
+  font-family: 'Coiny', cursive;
   
 }
 .btn{
     position: absolute;;
     bottom: 40%;
     right:20%;
+    font-family: 'Coiny', cursive;
+  
     align-self: baseline;
 
 }
@@ -28,6 +34,8 @@ html, body {
   color: white;
   position:objective;
   left: 0;
+  font-family: 'Coiny', cursive;
+  
   bottom: 50%;
   width: 100%;
 }
@@ -42,6 +50,7 @@ html, body {
   left: 13%;
   bottom: 0;
   width: 100%;
+  font-family: 'Coiny', cursive;
   
   color: white;
   text-align: center;
@@ -53,6 +62,7 @@ html, body {
   margin-top: 100%;
   bottom: 0;
   width: 100%;
+  font-family: 'Coiny', cursive;
   
   color: white;
   text-align: center;
@@ -60,6 +70,8 @@ html, body {
 }
 .fas{
   color:gold;
+  font-family: 'Coiny', cursive;
+  
   align-content: flex-end;
   align:left;
 }
@@ -67,21 +79,28 @@ html, body {
   width: 100%;
   align: left;
   align-content: center;
-
+  font-family: 'Coiny', cursive;
+  
 
 }
 .update{
   color:gold;
+  font-family: 'Coiny', cursive;
+  
 }
 
 #but{
   position: absolute;
 top:10%; 
+font-family: 'Coiny', cursive;
+  
  left: 210%;
 } 
 .sidenav a {
  padding: 5% 1% 1% 10%;
   text-decoration: none;
+  font-family: 'Coiny', cursive;
+  
   font-size: 155%;
   color: white;
   display: block;
@@ -89,10 +108,13 @@ top:10%;
 
 .sidenav a:hover {
   color: #f1f1f1;
+  font-family: 'Coiny', cursive;
+  
 }
 
 .sidenav {
   height: 100%;
+  font-family: 'Coiny', cursive;
   width: 13%;
   position: fixed;
   z-index: 1;
@@ -113,6 +135,7 @@ a{
 }
 #notif{
   color:orange;
+  font-family: 'Coiny', cursive;
   font-size:160%;
   box-shadow: 10%;
   
@@ -121,7 +144,7 @@ a{
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Coiny', cursive;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -139,6 +162,7 @@ html {
 
  #bod{
   background-color: whitesmoke;
+  font-family: 'Coiny', cursive;
    background-image: url('../images/bg1234.jpg'); 
   background-repeat:no repeat;
   background-size:100%;
@@ -147,19 +171,24 @@ html {
 #tabl{
   color:gold;
   font-size: 150%;
+  font-family: 'Coiny', cursive;
   height: 742px;
   
 }
 #hll{
   color:black;
+  font-family: 'Coiny', cursive;
+  
   display: flex;}
   
 #badg{
   color:white;
   background-color:black; 
+  font-family: 'Coiny', cursive;
   
 }
 #ordstatus{
+  font-family: 'Coiny', cursive;
   color:black;
 }
 

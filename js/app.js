@@ -258,22 +258,19 @@ app.controller("csignController",function($scope,$http,$window){
             "password1":$scope.password1,
             "password2":$scope.password2
         };
-            if($scope.password1!=$scope.password2){
-                $scope.error="password must be same as confirm password"
-            }else{
-                    
-             $http.post("http://localhost:3000/givecsignupdata",data).then(function(response){
-                if(response.data.msg==null){    
-                    $scope.error=response.data.msg;
-                }
-                else{
-                    var host = $window.location.host;
-                    var landingUrl = "loginnew.html";
-                      $window.location.href = landingUrl;
-                }
-            });
-            }
-        console.log(data);
+        if($scope.password1!=$scope.password2){
+            $scope.error="password must be same as confirm password"
+        }else{
+                
+         $http.post("http://localhost:3000/givecsignupdata",data).then(function(response){
+             
+               console.log("else");
+            //    $location.url('/loginnew.html');
+                // console.log($location);
+                  $window.location.href = "loginnew.html";
+            
+        });
+        }console.log(data);
     }
 }
     
@@ -295,6 +292,28 @@ app.controller("loginController",function($scope,$http,$window){
         }
         else{
             $window.location.href = "boutiquehome.html";
+        }
+        });
+    }
+});
+
+
+
+app.controller("logincController",function($scope,$http,$window){
+    $scope.loginc=function(){
+        console.log("login called");
+        let data={
+            "email":$scope.email,
+            "password":$scope.pwd
+        }
+        console.log(data);
+        $http.post("http://localhost:3000/loginc",data).then(function(response){
+        console.log("customer home page")
+        if(response.data.msg=="invalid email or password"){    
+            $scope.error=response.data.msg;
+        }
+        else{
+            $window.location.href = "selection.html";
         }
         });
     }

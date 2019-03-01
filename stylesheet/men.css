@@ -7,6 +7,7 @@
   background-color: black;
   background-image: url('../images/bg.jpeg');
   background-repeat: no-repeat;
+  font-family: 'Coiny', cursive;
  background-size: 100%;
  overflow-x: hidden;
 }
@@ -15,6 +16,7 @@
 .center {
   display: block;
   margin-left: 300px;
+  font-family: 'Coiny', cursive;
   margin-right: auto;
   width: 30%;
   align-content: start;
@@ -28,10 +30,7 @@
   margin-left: 300px;
   margin-right: 300px;
   align-self: center;
-  font-family: 'Playfair Display', serif;
-
-  font-family: 'ZCOOL KuaiLe', cursive;
-
+  font-family: 'Coiny', cursive;
 
 }
 
@@ -46,26 +45,25 @@
   
 }
 
-#i1:hover{
-  
-}
+
 
 #navigation li a{
-  background-color: rgb(255, 174, 0);
-  color: black;
+  font-family: 'Coiny', cursive;
+  color: white;
   font-size: 2rem;
-  border: 3px solid black;
-  border-radius: 120px;
-  margin-right: 2rem;
+  border: 2px solid black;
+   margin-right: 2rem;
   margin-top: 2rem;
 }
 #h1ss{
   position: absolute;
+  font-family: 'Coiny', cursive;
   top: 20px;
   left: 400px;
 }
 
 .sidenav a {
+  font-family: 'Coiny', cursive;
   padding: 6% 18% 16% 5%;
   text-decoration: none;
   font-size: 25px;
@@ -80,6 +78,7 @@
 }
 
 .sidenav a:hover {
+  font-family: 'Coiny', cursive;
   color: #f1f1f1;
 }
 
@@ -87,6 +86,7 @@
 #yourElement {
   animation-duration: 4s;
   animation-delay: 2s;
+  font-family: 'Coiny', cursive;
   animation-iteration-count: infinite;
  
 }
@@ -135,13 +135,15 @@
   font-size: 100%;
   padding: 7px 14px;
   border: 1px solid yellow;
+  font-family: 'Coiny', cursive;
   margin: 50px 0 0 0;
   background-color: transparent;
 }
 
 .hovereffect a.info:hover {
   box-shadow: 0 0 5px rgb(255, 255, 255);
-}
+  font-family: 'Coiny', cursive;
+  }
 
 .hovereffect a.info, .hovereffect h2 {
   -webkit-transform: scale(0.7);
@@ -151,8 +153,9 @@
   transition: all 0.4s ease-in;
   opacity: 0;
   filter: alpha(opacity=0);
-  color: tomato;
+  color: white;
   text-transform: uppercase;
+  font-family: 'Coiny', cursive;
 }
 
 .hovereffect:hover a.info, .hovereffect:hover h2 {
@@ -161,10 +164,11 @@
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
+  font-family: 'Coiny', cursive;
 }
 
 #man{
-  font-family: 'Pacifico', cursive;
+  font-family: 'Coiny', cursive;
   color: beige;
  margin-right: 80px;
  
@@ -177,11 +181,12 @@
   color: white;
   display: ruby;
   margin-left: 1200px;
-  
+  font-family: 'Coiny', cursive;
 }
 
 .sidenav a:hover {
   color: #f1f1f1;
+  font-family: 'Coiny', cursive;
 }
 
 .hovereffect1 {
@@ -192,11 +197,11 @@
   position: relative;
   text-align: center;
   cursor: default;
-  
+  font-family: 'Coiny', cursive;
 }
 
 .hovereffect1 .overlay1 {
- 
+  font-family: 'Coiny', cursive;
   position: relative;
   overflow: hidden;
   bottom: 180px;
@@ -228,12 +233,14 @@
   font-size: 100%;
   padding: 7px 14px;
   border: 1px solid yellow;
+  font-family: 'Coiny', cursive;
   margin: 50px 0 0 0;
   background-color: transparent;
 }
 
 .hovereffect1 a.info:hover {
   box-shadow: 0 0 5px rgb(255, 255, 255);
+  font-family: 'Coiny', cursive;
 }
 
 .hovereffect1 a.info, .hovereffect h2 {
@@ -243,8 +250,9 @@
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
   opacity: 0;
+  font-family: 'Coiny', cursive;
   filter: alpha(opacity=0);
-  color: tomato;
+  color: white;
   text-transform: uppercase;
 }
 
@@ -252,6 +260,7 @@
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-transform: scale(1);
+  font-family: 'Coiny', cursive;
   -ms-transform: scale(1);
   transform: scale(1);
 }

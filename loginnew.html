@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+
     <title>Document</title>
     <style>
      .navbar {
@@ -17,6 +19,7 @@
   }
   
   body, html {
+    font-family: 'Amaranth';font-size: 22px;
     height: 100%;
     background-repeat: no-repeat;
     background-color:black;
@@ -237,7 +240,7 @@ img {
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 
       </head>
-<body  ng-app="myApp" ng-controller="loginController">
+<body  ng-app="myApp" >
 
  
   <div class="navbar">
@@ -273,7 +276,7 @@ img {
             
                      
                   
-<div id="id01" class="modal">
+<div id="id01" class="modal" ng-controller="loginController">
   
   <form class="modal-content animate" >
     <div class="imgcontainer">
@@ -320,7 +323,7 @@ window.onclick = function(event) {
         <img src="images/logo1.jpeg" alt="Avatar" class="avatar">
       </div>
   
-<div class="container">
+<div class="container" ng-controller="logincController" >
         <form>
           {{error}}
         <label for="cname" style="color:black"><b>Email</b></label>
@@ -329,7 +332,7 @@ window.onclick = function(event) {
         <label for="cpassword" style="color:black" ><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="cpassword" ng-model="pwd" minlength="8"  required>
           
-        <a ng-click="login()"><button> Login</button></a>
+        <a ng-click="loginc()"> Login</a>
       </div>
       <div class="container" style="background-color:#f1f1f1">
         <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>

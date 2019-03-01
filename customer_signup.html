@@ -3,8 +3,10 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 
 
+
 body{
     margin: 0;
+
     font-size: .9rem;
     font-weight: 400;
     line-height: 1.6;
@@ -284,7 +286,7 @@ body{
                                 <div class="form-group row">
                                     <label for="pincode" class="col-md-4 col-form-label text-md-right">Pincode</label>
                                     <div class="col-md-6">
-                                        <input type="text" id="pincode" class="form-control" name="pincode" ng-model="pincode">
+                                        <input type="text" id="pincode" class="form-control" name="pincode"  ng-model="pincode">
                                         {{pincodeError}}
                                     </div>
                                 </div>
@@ -292,14 +294,14 @@ body{
                                 <div class="form-group row">
                                     <label for="p1"class="col-md-4 col-form-label text-md-right">Password</label>
                                     <div class="col-md-6">
-                                        <input type="password" id="p1" class="form-control" name="p1" ng-model="password1">
+                                        <input type="password" id="p1" class="form-control" name="p1" minlength="8" ng-model="password1">
                                         {{password1Error}}
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="p2"class="col-md-4 col-form-label text-md-right">Re-enter Password</label>
                                     <div class="col-md-6">
-                                        <input type="password" id="p1" class="form-control" name="p2" ng-model="password2">
+                                        <input type="password" id="p1" class="form-control" name="p2" minlength="8" ng-model="password2">
                                         {{password2Error}}
                                     </div>
                                 </div>
@@ -307,7 +309,7 @@ body{
                                 <div class="col-md-6 offset-md-4">
                                    
                                    
-                                    <a href="loginnew.html" ng-click="csignup()">Sign Up</a>
+                                    <a  ng-click="csignup()">Sign Up</a>
 
                                 </div></div>
                             </form>

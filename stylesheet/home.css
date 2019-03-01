@@ -39,7 +39,7 @@ div.carousel-caption{
 	width: 100%;
 	height: auto;
 	margin: auto;
-	background: #1B9CFC;
+	background:rgb(68, 14, 14);
 	padding: 20px 0px;
 }
 
@@ -61,8 +61,10 @@ div.carousel-caption{
 	height:50px;
 	margin: 0px 10px;
 	border-radius: 100%;
-	background: #1B9CFC;
+	background:black;
+	font-family: 'Coiny', cursive;
 }
+
 
 .footer-social-icons ul li a{
 	color: #182C61;

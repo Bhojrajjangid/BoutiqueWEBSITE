@@ -5,7 +5,17 @@ let mongoose=require('mongoose');
 let bodyParser=require('body-parser');
 let app=express();
 let bp=bodyParser.json();
+//wirte var nodemailer
+ var nodemailer = require('nodemailer');
 mongoose.connect('mongodb://admin:admin123@ds247330.mlab.com:47330/boutique')
+var transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: 'bhojrajjangid125@gmail.com',
+      pass: 'bharath125$'
+    }
+  });
+  
 
 let measurementSchema=new mongoose.Schema({
    "name":String,
@@ -145,6 +155,7 @@ app.get("/bsignup",function(req,res){
     console.log("bsignup called");
     boutiqueSignupModel.find({},function(err,data){
         console.log("bsignup called");
+    
         res.json(data);
     });   
 });
@@ -152,7 +163,21 @@ app.get("/bsignup",function(req,res){
 app.post("/givebsignupdata",bp,function(req,res){
     console.log("data calle");
     boutiqueSignupModel(req.body).save(function(err,data){
-        console.log(err);
+        console.log('error');
+        var mailOptions = {
+            from: 'bhojrajjangid125@gmail.com',
+            to: req.body.email,
+            subject: 'Sending Email using Node.js',
+            text: 'Thanks for registering with us !'
+          };
+          
+          transporter.sendMail(mailOptions, function(error, info){
+            if (error) {
+              console.log(error);
+            } else {
+              console.log('Email sent: ' + info.response);
+            }
+          });
         res.json(data);
     })
 });
@@ -165,7 +190,7 @@ app.get("/csignup",function(req,res){
 
 
 app.post("/givecsignupdata",bp,function(req,res){
-    console.log("data calle");
+    console.log("data called");
     customerSignupModel(req.body).save(function(err,data){
         console.log(err);
         res.json(data);
@@ -177,6 +202,22 @@ app.post("/login",bp,function(req,res){
     console.log(req.body.email);
     console.log(req.body.password);
     boutiqueSignupModel.find({"email":req.body.email,"password1":req.body.password},function(err,data){
+        
+        if(data.length!=0){
+            console.log(data);
+            res.json({"msg":"ok"});
+        }
+        else{
+            let error={"msg":"invalid email or password"}
+            res.json(error);
+        }
+    });
+});
+
+app.post("/loginc",bp,function(req,res){
+    console.log(req.body.email);
+    console.log(req.body.password);
+    customerSignupModel.find({"email":req.body.email,"password1":req.body.password},function(err,data){
         
         if(data.length!=0){
             console.log(data);

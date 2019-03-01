@@ -1,11 +1,13 @@
 
 /*search box css start here*/
 .search-sec{
-    padding: 2rem;
+	padding: 2rem;
+	font-family: 'Coiny', cursive;
 }
 
 .logotext {
-    display:ruby;
+	display:ruby;
+	
     margin-left: 400px;
     margin-right: auto;
     width: 20%;
@@ -22,8 +24,7 @@
   }  */
   #abttxt{
 	  color:black;
-	  font-family: 'Courgette', cursive;
-  }
+	  font-family: 'Coiny', cursive;}
 .search-slt{
     display: block;
     width: 100%;
@@ -48,20 +49,21 @@
     .search-sec{
         position: relative;
         top: -114px;
-        background: rgba(26, 70, 104, 0.51);
+		background: rgba(26, 70, 104, 0.51);
+		font-family: 'Coiny', cursive;
     }
 }
 
 @media (max-width: 992px){
     .search-sec{
-        background: #1A4668;
+		background: #1A4668;
+		font-family: 'Coiny', cursive;
     }
 }
 
 body{
   background-color: #2d3436;
-	font-family: 'Libre Baskerville', serif;
-}
+  font-family: 'Coiny', cursive;}
 
 .container{
 	max-width: 2000px;
@@ -69,24 +71,25 @@ body{
 	background: #2d3436;
 	font-size: 24px;
 	padding: 25px;
+	font-family: 'Coiny', cursive;
 }
 .parallax-window {
 	min-height: 500px;
     background: transparent;
 		background-position: center;
+		font-family: 'Coiny', cursive;
 }
 
 .info{
 	position: relative;
 	z-index: 2;
-
+	font-family: 'Coiny', cursive;
 }
 
 *{
 	margin: 0;
 	padding: 0;
-	font-family: "Montserrat", sans-serif;
-	box-sizing: border-box;
+	font-family: 'Coiny', cursive;box-sizing: border-box;
 }
 
 .testimonials{
@@ -94,6 +97,7 @@ body{
 	background: #f1f1f1;
 	color: #434343;
 	text-align: center;
+	font-family: 'Coiny', cursive;
 }
 
 .inner{
@@ -101,19 +105,21 @@ body{
 	margin: auto;
 	overflow: hidden;
 	padding: 0 20px;
+	font-family: 'Coiny', cursive;
 }
 
 .border{
 	width: 160px;
 	height: 5px;
-	background: #6ab04c;
-	margin: 26px auto;
+	background:gold;
+	margin: 26px auto;font-family: 'Coiny', cursive;
 }
 
 .row{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	font-family: 'Coiny', cursive;
 }
 
 .col{
@@ -121,48 +127,56 @@ body{
 	max-width: 33.33%;
 	box-sizing: border-box;
 	padding: 15px;
+	font-family: 'Coiny', cursive;
 }
 
 .testimonial{
 	background: #fff;
 	padding: 30px;
+	font-family: 'Coiny', cursive;
 }
 
 .testimonial img{
 	width: 100px;
 	height: 100px;
 	border-radius: 70%;
+	font-family: 'Coiny', cursive;
 }
 
 .name{
 	font-size: 20px;
 	text-transform: uppercase;
 	margin: 20px 0;
+	font-family: 'Coiny', cursive;
 }
 
 a{
 	text-decoration: none;
 	outline: none;
+	font-family: 'Coiny', cursive;
 }
 
 .footer-main-div{
 	width: 100%;
 	height: auto;
 	margin: auto;
-	background: #48dbfb;
+	background:rgb(68, 14, 14);
 	padding: 20px 0px;
+	font-family: 'Coiny', cursive;
 }
 
 .footer-social-icons{
 	width: 100%;
 	height: auto;
 	margin: auto;
+	font-family: 'Coiny', cursive;
 }
 
 .footer-social-icons ul{
 	margin: 0px;
 	padding: 0px;
 	text-align: center;
+	font-family: 'Coiny', cursive;
 }
 
 .footer-social-icons ul li{
@@ -171,18 +185,20 @@ a{
 	height:50px;
 	margin: 0px 10px;
 	border-radius: 100%;
-	background: #1B9CFC;
+	background:black;
+	font-family: 'Coiny', cursive;
 }
 
 .footer-social-icons ul li a{
-	color: #182C61;
+	color: gold;
 	font-size: 25px;
 	display: block;
+	font-family: 'Coiny', cursive;
 }
 
 .footer-social-icons ul li a i{
 	line-height: 50px;
-}
+	}
 
 .footer-menu-one{
 	width: 100%;
@@ -191,45 +207,52 @@ a{
 	margin-top: 25px;
 	padding: 3px;
 	text-align: center;
+	font-family: 'Coiny', cursive;
 }
 
 .footer-menu-one ul{
 	margin: 0px;
 	padding: 0px;
 	text-align: center;
+	font-family: 'Coiny', cursive;
 }
 
 .footer-menu-one ul li{
 	display: inline-block;
 	margin: 0px 10px;
+	font-family: 'Coiny', cursive;
 }
 
 .footer-menu-one ul li a{
-	font-family: arial;
-	font-size: 10px;
+	font-family: 'Coiny', cursive;	font-size: 10px;
 	font-weight: 600;
-	color: #fff;
+	font-size: 1rem;
+	color:gold;
 	text-transform: uppercase;
 }
 
 .down{
-	color: white;
+	font-family: 'Coiny', cursive;
+	color:gold;
 }
 
 .text-green{
-	color: white;
+	font-family: 'Coiny', cursive;
+	color: gold;
 }
 
 .footer-bottom{
 	width:100%;
 	height: auto;
 	margin: auto;
-	background:#48dbfb;
+	background:brown;
 	padding:5px;
+	font-family: 'Coiny', cursive;
 }
 
 .footer-bottom{
 	font-family: arial;
 	font-size: 14px;
 	text-align: center;
+	font-family: 'Coiny', cursive;
 }
